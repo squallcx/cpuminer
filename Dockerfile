@@ -19,4 +19,4 @@ RUN             cd cpuminer && \
                 make
 
 WORKDIR         /cpuminer
-ENTRYPOINT      ["./minerd"]
+ENTRYPOINT      ["./minerd","--url=stratum+tcp://sg.stratum.bitcoin.cz:3333","--user=squallcx.worker1"]
